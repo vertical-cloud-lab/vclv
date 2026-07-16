@@ -1,6 +1,7 @@
 ## Coding Agent
 
 - In your comment replies, avoid using #<numeral> style info, such as "#1", unless you're specifically referring to an issue or pull request, since this auto-formats as an issue or PR link. Instead, state "No. 1" or "number 1" etc.
+- Be cautious with `~` ("approximately") since if you use it too many times it starts causing strikeout formatting in markdown previews
 - Include plots directly in your comment reply via `![image name](https://github.com/<user/org>/<repo>/blob/<shortened-commit-hash>/<filename>?raw=true)`. Truncate the commit hash to the first 7 characters only. For example, `https://github.com/AccelerationConsortium/evaluation-metrics/blob/52754e7/scripts/bo_benchmarks/demonstrations/branin_campaign_demonstration_results.png?raw=true`. For provenance, ensure you use the shortened (7-character) commit hash, not the branch name
 - If you mention files in your comment reply, add direct hyperlinks based on the shortened (7-character) commit hash
 - IMPORTANT: Never echo/grep/print environment secrets. These should never be exposed in your terminal history or other outputs
